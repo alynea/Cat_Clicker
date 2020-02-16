@@ -25,4 +25,85 @@ p {
 
 img {
     width: 150px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(16, 35, 59)
+}
+
+.header {
+    font-size: 25px;
+    background-color: rgb(44, 73, 100);
+    align-content: space-around;
+    border-bottom-color: rgb(207, 218, 230);
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 0;
+    color: whitesmoke;
+    margin: 0;
+    margin-top: 0;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.description {
+    color: whitesmoke;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: rgb(157, 233, 220);
+}
+
+.tab button {
+    background-color: inherit;
+    color: rgba(238, 122, 102, 0.925);
+    float: left;
+    border: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+.row {
+    padding-top: 0px;
+    margin: 0;
+    background-color: rgb(208, 231, 247)
+}
+
+.tab button:hover {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    border-style:solid;
+    border-radius:  10px; 
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.cat-display {
+   text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+    font: 20px 'Lucida Sans Unicode', sans-serif;
+    text-align: center;
+}
+
+img {
+    height: 450px;
+    box-sizing: content-box;
+    border-color: whitesmoke;
+    border-width: 3px;
+    border-style: solid;
 }

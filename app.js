@@ -6,6 +6,16 @@ let catImgSrc2 = "./images/cat_pic2.jpg"
 let catDisplay = document.getElementsByClassName('cat-display');
 let clickCounter = 0;
 let clickNumber = document.querySelector('.click-number');
+let cat1Name = "Milly";
+let cat2Name = "Whiskers"
+let catImgSrc1 = "./images/cat_pic1.jpeg";
+let catImgSrc2 = "./images/cat_pic2.jpg"
+let catDisplay = document.getElementsByClassName('cat-display');
+let clickCounter1 = 0;
+let clickCounter2 = 0;
+let clickNumber1 = document.querySelector('.click-number1');
+let clickNumber2 = document.querySelector('.click-number2');
+
 
 
 // Create an image element and set the src of the element as catImage
@@ -18,6 +28,10 @@ catImage1.src = catImgSrc1;
 catImage2.src = catImgSrc2;
 catImage1.className = "img-thumbnail";
 catImage2.className = "img-thumbnail";
+
+catImage1.src = catImgSrc1;
+catImage2.src = catImgSrc2;
+
 catDisplay[0].appendChild(catImage1);
 catDisplay[1].appendChild(catImage2);
 
@@ -27,3 +41,16 @@ catImage.addEventListener('click', function(e){
         clickCounter++;
         clickNumber.innerHTML = clickCounter;    
 });
+catImage1.addEventListener('click', function(e){
+        clickCounter1++;
+        clickNumber1.innerHTML = clickCounter1;    
+});
+catImage2.addEventListener('click', function(e){
+        clickCounter2++;
+        clickNumber2.innerHTML = clickCounter2;    
+});
+
+// Add a name to the cat image for each cat
+
+document.getElementById("cat1Name").innerHTML = cat1Name;
+document.getElementById("cat2Name").innerHTML = cat2Name;
